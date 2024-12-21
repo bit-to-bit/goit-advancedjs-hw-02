@@ -1,0 +1,151 @@
+/* #region Variables */
+
+:root {
+    /* Colors */
+    --color-blue: #4D5AE5;
+    --color-blue-light: #6c8cff;
+    --color-pink: #ff4e4e;
+    --color-pink-light: #ff7070;
+    --color-grey: #808080;
+    --color-area-background: #f6f6fe;
+    --text-color-normal: #2e2f42;
+    --text-color-light: #fff;
+}
+
+/* #endregion */
+
+/* #region Base */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 16px;
+    padding: 24px;
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--text-color-light);
+    color: var(--text-color-normal);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+button {
+    font-family: inherit;
+    color: currentColor;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* #endregion */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    /* Для горизонтального вирівнювання */
+    align-items: center;
+}
+
+.feedback-form button {
+    display: inline-block;
+    align-self: flex-start;
+    min-width: 40px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: none;
+    color: var(--text-color-light);
+    background: var(--color-blue);
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.feedback-form button:hover {
+    border: none;
+    background: var(--color-blue-light);
+}
+
+button[data-destroy] {
+    background-color: var(--color-pink);
+}
+
+button[data-destroy]:hover {
+    background-color: var(--color-pink-light);
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 360px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: var(--text-color-normal);
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid var(--color-grey);
+    outline: none;
+    margin: 8px 0px 0px 0px;
+
+}
+
+.feedback-form input {
+    height: 40px;
+}
+
+input:hover {
+    border-color: var(--text-color-normal);
+}
+
+input#name-input {
+    margin-top: 16px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 24px;
+}
+
+.feedback-form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
