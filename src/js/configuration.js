@@ -1,7 +1,10 @@
+import icoError from '../img/error.svg';
+import icoOk from '../img/ok.svg';
+
 export const COLOR_ERROR = ' #ef4040';
 export const COLOR_OK = ' #59A10D';
-export const ICO_ERROR = 'img/vite-logo.png';
-export const ICO_OK = 'img/ok.svg';
+export const ICO_ERROR = icoError;
+export const ICO_OK = icoOk;
 
 export const iziToastSettingsTimer = {
   timeout: 4000,
