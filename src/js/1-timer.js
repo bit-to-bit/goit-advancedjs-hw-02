@@ -74,7 +74,7 @@ const timer = {
   },
 
   stop() {
-    setDisabledValueForElements(false, startButton, startInput);
+    setDisabledValueForElements(false, startInput);
     clearInterval(this.intervalId);
     console.log('Timer stoped');
   },
